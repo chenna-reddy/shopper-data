@@ -1,0 +1,14 @@
+{
+  "name": "shopper-db",
+  "version": "1.0.0",
+  "description": "Shopper Data generator",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "author": "Chenna Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "mocker-data-generator": "^2.12.0"
+  }
+}
