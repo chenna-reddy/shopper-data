@@ -141,3 +141,4 @@ var data = mocker()
     .buildSync()
 
 fs.writeFileSync('shopper-data.json', JSON.stringify(data.events, null, ' '));
+
