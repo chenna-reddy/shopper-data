@@ -42,14 +42,14 @@ const family = {
         function: function() {
             return this.faker.random.arrayElement(this.db.users)
         },
-        length: 3,
+        length: 10,
         fixedLength: false
     }],
     cards: [{
         function: function() {
             return this.faker.random.arrayElement(this.db.cards).id
         },
-        length: 3,
+        length: 5,
         fixedLength: false
     }],
     ips: [{
@@ -133,11 +133,11 @@ const shopEvent = {
 
 
 var data = mocker()
-    .schema('ips', ip, 20000)
-    .schema('cards', card, 20000)
-    .schema('users', user, 10000)
-    .schema('families', family, 10)
-    .schema('events', shopEvent, 20)
+    .schema('ips', ip, 10000)
+    .schema('cards', card, 50000)
+    .schema('users', user, 100000)
+    .schema('families', family, 5000)
+    .schema('events', shopEvent, 15000)
     .buildSync()
 
 fs.writeFileSync('shopper-data.json', JSON.stringify(data.events, null, ' '));
