@@ -134,9 +134,9 @@ const shopEvent = {
 
 var data = mocker()
     .schema('ips', ip, 10000)
-    .schema('cards', card, 50000)
-    .schema('users', user, 100000)
-    .schema('families', family, 5000)
+    .schema('cards', card, 2000)
+    .schema('users', user, 2000)
+    .schema('families', family, 2000)
     .schema('events', shopEvent, 15000)
     .buildSync()
 
